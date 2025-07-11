@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHS Consult Market - SEO de Alta Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --neon-blue: #00f0ff;
+            --dark-bg: #0a0a15;
+            --darker-bg: #050510;
+            --card-bg: #111125;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-bg);
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, .cta-btn, .nav-item {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .neon-text {
+            color: var(--neon-blue);
+            text-shadow: 0 0 5px var(--neon-blue), 0 0 10px rgba(0, 240, 255, 0.5);
+        }
+        
+        .neon-border {
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 10px var(--neon-blue), inset 0 0 10px var(--neon-blue);
+        }
+        
+        .neon-glow {
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+        
+        .hero-bg {
+            background: radial-gradient(circle at 70% 30%, rgba(0, 240, 255, 0.1) 0%, transparent 40%),
+                        linear-gradient(to bottom, var(--darker-bg) 0%, var(--dark-bg) 100%);
+        }
+        
+        .icon-box {
+            transition: all 0.3s ease;
+        }
+        
+        .icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px var(--neon-blue);
+        }
+        
+        .testimonial-card {
+            background: var(--card-bg);
+            border-left: 3px solid var(--neon-blue);
+        }
+        
+        .sticky-cta {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(0, 240, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 240, 255, 0); }
+        }
+        
+        .hero-image {
+            filter: drop-shadow(0 0 15px var(--neon-blue));
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky CTA Button -->
+    <div class="fixed bottom-5 right-5 z-50">
+        <a href="#contact" class="cta-btn bg-black neon-border neon-glow text-white py-3 px-6 rounded-full font-bold uppercase tracking-wider sticky-cta flex items-center">
+            <i class="fas fa-bolt mr-2 neon-text"></i> QUERO APARECER NO GOOGLE!
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="py-4 px-6 lg:px-16 bg-black bg-opacity-80 backdrop-blur-sm fixed w-full z-40">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full neon-border flex items-center justify-center mr-3">
+                    <span class="text-xl font-bold neon-text">GHS</span>
+                </div>
+                <span class="text-xl font-bold neon-text hidden sm:block">CONSULT MARKET</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#hero" class="nav-item text-white hover:text-neon-blue transition">Início</a>
+                <a href="#benefits" class="nav-item text-white hover:text-neon-blue transition">Benefícios</a>
+                <a href="#offer" class="nav-item text-white hover:text-neon-blue transition">Oferta</a>
+                <a href="#testimonials" class="nav-item text-white hover:text-neon-blue transition">Depoimentos</a>
+                <a href="#contact" class="nav-item text-white hover:text-neon-blue transition">Contato</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg min-h-screen flex items-center pt-20 pb-10 px-6 lg:px-16 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-center lg:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    <span class="neon-text">Transforme Seu Negócio</span><br>
+                    com SEO de Alta Performance!
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                    Gestão Completa do Google Meu Negócio por apenas <span class="font-bold neon-text">R$200/mês</span>
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#contact" class="cta-btn bg-black neon-border neon-glow text-white py-4 px-8 rounded-full font-bold uppercase tracking-wider text-lg flex items-center justify-center">
+                        <i class="fas fa-bolt mr-2 neon-text"></i> QUERO APARECER NO GOOGLE!
+                    </a>
+                    <a href="#benefits" class="border border-gray-700 text-white py-4 px-8 rounded-full font-bold uppercase tracking-wider text-lg hover:border-neon-blue transition flex items-center justify-center">
+                        <i class="fas fa-info-circle mr-2"></i> Saiba Mais
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Profissional de SEO" 
+                     class="hero-image w-full h-auto max-w-lg mx-auto rounded-lg object-cover">
+                <div class="absolute -bottom-5 -right-5 w-32 h-32 rounded-full neon-border bg-black bg-opacity-70 flex items-center justify-center">
+                    <span class="text-4xl neon-text">↑</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Neon light effects -->
+        <div class="absolute -bottom-20 -left-20 w-64 h-64 rounded-full neon-glow bg-neon-blue opacity-10 blur-xl"></div>
+        <div class="absolute top-1/3 -right-20 w-48 h-48 rounded-full neon-glow bg-neon-blue opacity-10 blur-xl"></div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 px-6 lg:px-16 bg-gradient-to-b from-dark-bg to-darker-bg">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 neon-text">Por Que Escolher Nossos Serviços?</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Nossa abordagem estratégica de SEO local coloca seu negócio no topo das pesquisas do Google</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="icon-box bg-card-bg p-8 rounded-xl text-center neon-border hover:neon-glow">
+                    <div class="w-20 h-20 neon-border rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-3xl neon-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mais Visibilidade Local</h3>
+                    <p class="text-gray-400">Apareça nas primeiras posições quando clientes buscarem por serviços como o seu na região.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="icon-box bg-card-bg p-8 rounded-xl text-center neon-border hover:neon-glow">
+                    <div class="w-20 h-20 neon-border rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-3xl neon-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mais Clientes</h3>
+                    <p class="text-gray-400">Aumente seu fluxo de clientes qualificados que já estão procurando pelo que você oferece.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="icon-box bg-card-bg p-8 rounded-xl text-center neon-border hover:neon-glow">
+                    <div class="w-20 h-20 neon-border rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-file-alt text-3xl neon-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Relatórios Mensais</h3>
+                    <p class="text-gray-400">Acompanhe seu crescimento com relatórios detalhados de desempenho e métricas.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="icon-box bg-card-bg p-8 rounded-xl text-center neon-border hover:neon-glow">
+                    <div class="w-20 h-20 neon-border rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-3xl neon-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Suporte Personalizado</h3>
+                    <p class="text-gray-400">Tenha um especialista dedicado para tirar dúvidas e otimizar sua presença online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section id="offer" class="py-20 px-6 lg:px-16 bg-darker-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-card-bg neon-border rounded-xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full neon-glow bg-neon-blue opacity-5 blur-xl"></div>
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 neon-text">Oferta Exclusiva</h2>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-neon-blue mr-3 mt-1"></i>
+                                <span>Otimização completa do perfil no Google Meu Negócio</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-neon-blue mr-3 mt-1"></i>
+                                <span>Gerenciamento de avaliações e respostas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-neon-blue mr-3 mt-1"></i>
+                                <span>Publicação regular de posts e atualizações</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-neon-blue mr-3 mt-1"></i>
+                                <span>Monitoramento de concorrentes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-neon-blue mr-3 mt-1"></i>
+                                <span>Relatório mensal de desempenho</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-black bg-opacity-70 neon-border rounded-xl p-8 mb-6">
+                            <div class="text-5xl font-bold neon-text mb-2">R$200<span class="text-xl">/mês</span></div>
+                            <div class="text-gray-400">Plano Mensal</div>
+                        </div>
+                        <p class="text-red-400 font-bold mb-6 animate-pulse">VAGAS LIMITADAS!</p>
+                        <a href="#contact" class="cta-btn bg-black neon-border neon-glow text-white py-4 px-8 rounded-full font-bold uppercase tracking-wider text-lg inline-flex items-center">
+                            <i class="fas fa-bolt mr-2 neon-text"></i> QUERO COMEÇAR AGORA
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 lg:px-16 bg-gradient-to-b from-darker-bg to-dark-bg">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 neon-text">O Que Nossos Clientes Dizem</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Resultados reais de negócios que confiaram em nossa expertise</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ana Carolina</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Em 3 meses, meu salão apareceu na primeira página do Google e meu faturamento aumentou 40%. O investimento valeu cada centavo!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ricardo Almeida</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Finalmente consegui competir com as grandes redes de restaurantes da região. Agora recebo mais de 30 pedidos por dia pelo Google!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Juliana Santos</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"O suporte é incrível e os resultados apareceram rápido. Minha clínica odontológica nunca teve tantos pacientes novos!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 lg:px-16 bg-dark-bg">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 neon-text">Pronto para Transformar Seu Negócio?</h2>
+                    <p class="text-xl text-gray-400 mb-8">Preencha o formulário e um de nossos especialistas entrará em contato para criar uma estratégia personalizada para sua empresa.</p>
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 neon-border rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt neon-text"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Telefone</p>
+                                <p class="text-xl font-bold">(31) 98607-4071</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 neon-border rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope neon-text"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Email</p>
+                                <p class="text-xl font-bold">ghsconsultmarket@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 neon-border rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-clock neon-text"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Horário</p>
+                                <p class="text-xl font-bold">Seg-Sex: 9h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 neon-border rounded-full flex items-center justify-center text-xl hover:neon-glow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 neon-border rounded-full flex items-center justify-center text-xl hover:neon-glow">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 neon-border rounded-full flex items-center justify-center text-xl hover:neon-glow">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 neon-border rounded-full flex items-center justify-center text-xl hover:neon-glow">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-card-bg p-8 rounded-xl neon-border">
+                    <form id="whatsapp-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 text-gray-400">Seu Nome</label>
+                            <input type="text" id="name" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-blue transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-gray-400">Seu Email</label>
+                            <input type="email" id="email" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-blue transition">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 text-gray-400">Seu Telefone</label>
+                            <input type="tel" id="phone" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-blue transition">
+                        </div>
+                        <div>
+                            <label for="business" class="block mb-2 text-gray-400">Seu Negócio</label>
+                            <input type="text" id="business" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-blue transition">
+                        </div>
+                        <button type="submit" class="w-full cta-btn bg-black neon-border neon-glow text-white py-4 rounded-full font-bold uppercase tracking-wider text-lg flex items-center justify-center">
+                            <i class="fas fa-paper-plane mr-2 neon-text"></i> ENVIAR MENSAGEM
+                        </button>
+                    </form>
+                    <script>
+                    document.getElementById("whatsapp-form").addEventListener("submit", function(e){
+                        e.preventDefault();
+                        var nome = document.getElementById("name").value;
+                        var email = document.getElementById("email").value;
+                        var telefone = document.getElementById("phone").value;
+                        var negocio = document.getElementById("business").value;
+                        var mensagem = `Gostaria de saber mais!%0A%0ANome: ${nome}%0AEmail: ${email}%0ATelefone: ${telefone}%0ANegócio: ${negocio}`;
+                        var fone = "5531986074071";
+                        var link = `https://wa.me/${fone}?text=${mensagem}`;
+                        window.open(link, '_blank');
+                    });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 lg:px-16 bg-black bg-opacity-80">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full neon-border flex items-center justify-center mr-3">
+                            <span class="font-bold neon-text">GHS</span>
+                        </div>
+                        <span class="text-lg font-bold neon-text">CONSULT MARKET</span>
+                    </div>
+                    <p class="text-gray-400">Especialistas em SEO local e gestão do Google Meu Negócio para alavancar sua presença digital.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 neon-text">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-neon-blue transition">Otimização GMB</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-neon-blue transition">SEO Local</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-neon-blue transition">Gestão de Avaliações</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-neon-blue transition">Relatórios de Desempenho</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 neon-text">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-neon-blue transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-neon-blue transition">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-neon-blue transition">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-neon-blue transition">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 neon-text">Newsletter</
+</html>
